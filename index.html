@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <title>Eimael Iscas</title>
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="titulo-botao">
+                <h1 class="titulo">Eimael Iscas</h1>
+                <button class="mobile-menu-button" type="button">+</button>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#produtos">Produtos</a>
+                        <ul class="submenu">
+                            <li>
+                                <a href="#">Iscas</a>
+                            </li>
+                            <li>
+                                <a href="#">Peixes</a>
+                            </li>
+                            <li>
+                                <a href="#">Material</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div id="carousel-imagens">
+        <div><img src="./images/Baleia.jpg" alt="Baleia"></div>
+        <div><img src="./images/polvo.jpg" alt="Polvo"></div>
+        <div><img src="./images/Tubarão.jpg" alt="Tubarão"></div>
+    </div>
+
+    <section class="container" id="sobre">
+        <div class="sobre">
+            <img src="./images/Eimael iscas.jpeg" alt="">
+            <div>
+                <h2>Sobre a loja</h2>
+                <div class="linha"></div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed consequatur minima quis alias, ad maiores. Vel porro inventore officiis rerum, mollitia quaerat veniam odio quisquam accusamus, dicta repellat pariatur iste!</p>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="produtos">
+        <div class="produtos container">
+            <h2>Produtos</h2>
+            <div class="linha"></div>
+            <div class="prateleira">
+                <div class="item">
+                    <img src="https://image-placeholder.com/images/actual-size/320x320.png" alt="">
+                    <h2>Item1</h2>
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+                    <strong>R$ 100,00</strong>
+                    <button type="button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://image-placeholder.com/images/actual-size/320x320.png" alt="">
+                    <h2>Item2</h2>
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+                    <strong>R$ 100,00</strong>
+                    <button type="button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://image-placeholder.com/images/actual-size/320x320.png" alt="">
+                    <h2>Item3</h2>
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+                    <strong>R$ 100,00</strong>
+                    <button type="button">Adicionar ao Carrinho</button>
+                </div>
+                <div class="item">
+                    <img src="https://image-placeholder.com/images/actual-size/320x320.png" alt="">
+                    <h2>Item4</h2>
+                    <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</span>
+                    <strong>R$ 100,00</strong>
+                    <button type="button">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container container-flex">
+            <p>2024 &copy; Eimael Iscas - Todos os direitos reservados</p>
+        <ul class="container-flex">
+            <li><a href=""><img src="./images/facebook.png" alt="Facebook"></a></li>
+            <li><a href=""><img src="./images/instagram.png" alt="Intagram"></a></li>
+            <li><a href=""><img src="./images/youtube.png" alt="Youtube"></a></li>
+        </ul>
+    </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./main.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#carousel-imagens').slick({
+                autoplay: true,
+                arrows: false
+            });
+        });
+    </script>
+</body>
+</html>
